@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Dark_cyan: hsl(158, 36%, 37%);
+--Cream: hsl(30, 38%, 92%);
+--Very_dark_blue: hsl(212, 21%, 14%);
+--Dark_grayish_blue: hsl(228, 12%, 48%);
+--White: hsl(0, 0%, 100%);
+
+/* font family */
+--ff-Montserrat: "Montserrat", sans-serif;
+--ff-Fraunces: "Fraunces", serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Cream);
+}
+
+.card {
+    border-radius: 15px;
+    width: 675px;
+    /* border: 1px solid red; */
+    display: flex;
+    background-color: var(--White);
+
+}
+.left {
+    flex: 2;
+}
+
+.right {
+    flex: 2;
+}
+
+.show {       
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 35px;
+}
+#image1 {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 100%;
+}
+
+#image2 {
+    display: none;
+}
+
+.perfume {
+    font-size: 18px;
+    color: var(--Dark_grayish_blue);
+    letter-spacing: 8px;
+    font-family: var(--ff-Montserrat);
+    font-weight: 500;
+}
+
+.right h2 {
+    font-size: 38px;
+    font-family: var(--ff-Fraunces);
+}
+
+.info {
+    font-family: var(--ff-Montserrat);
+    color: var(--Dark_grayish_blue);
+    font-weight: 500;
+}
+
+.price {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.og-price {
+    font-family: var(--ff-Fraunces);
+    color: var(--Dark_cyan);
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.cut-price {
+    text-decoration: line-through;
+    color: var(--Dark_grayish_blue);
+    font-size: 14px;
+}
+
+button {
+    border-radius: 12px;
+    padding: 15px;
+    font-size: 17px;
+    gap: 15px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--Dark_cyan);
+    color: var(--White);
+    font-weight: 700;
+}
+
+
+@media screen and (max-width: 700px) {
+    main {
+        margin: 40px 80px;
+    }
+    .card {
+        flex-direction: column;
+        width: 90vw;
+    margin: auto;
+    }
+    
+    #image1 {
+        display: none;
+    }
+    #image2 {
+        display: block;
+        width: 100%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .price {
+        width: 220px;
+    }
+}
