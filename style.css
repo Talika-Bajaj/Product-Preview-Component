@@ -45,7 +45,7 @@ body {
 .show {       
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 25px;
     padding: 35px;
 }
 #image1 {
@@ -59,7 +59,7 @@ body {
 }
 
 .perfume {
-    font-size: 18px;
+    font-size: 14px;
     color: var(--Dark_grayish_blue);
     letter-spacing: 8px;
     font-family: var(--ff-Montserrat);
@@ -75,6 +75,7 @@ body {
     font-family: var(--ff-Montserrat);
     color: var(--Dark_grayish_blue);
     font-weight: 500;
+    font-size: 14px;
 }
 
 .price {
